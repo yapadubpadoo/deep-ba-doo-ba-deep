@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -26,8 +27,8 @@
     function navigate(target) {
       const targetURLs = {
         "7-11 App": "seven-eleven://www.7eleven.mobi/navPage/SE119",
-        "Google Chrome" : "googlechrome://www.allonline.7eleven.co.th"
-        "Safari" : "safari-https://www.allonline.7eleven.co.th"
+        "Google Chrome" : "googlechrome://www.allonline.7eleven.co.th",
+        "Safari" : "safari-https://www.allonline.7eleven.co.th",
       }
       if(targetURLs[target]) window.location.href = target;
       else alert(`Cannot find target for "${target}"`)
