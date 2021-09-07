@@ -17,18 +17,20 @@
       </p>
       <h2>Try to click the link below to see the navigation to All Online</h2>
       <ul>
-        <li onclick="navigate('7-11 App')"><a href="#">Open with installed 7-11 Application</a></li>
-        <li onclick="navigate('Google Chrome')"><a href="#">Open with Google Chrome</a></li>
-        <li onclick="navigate('Safari')"><a href="#">Open with Safari</a></li>
+        <li onclick="navigate('seven-eleven')"><a href="#">Open with installed seven-elevenlication <code>seven-eleven://</code></a></li>
+        <li onclick="navigate('googlechrome')"><a href="#">Open with Google Chrome <code>googlechrome://</code></a></li>
+        <li onclick="navigate('safari-https')"><a href="#">Open with Safari <code>safari-https://</code></a></li>
+        <li onclick="navigate('safari')"><a href="#">Open with safari <code>safari://</code></a></li>
     </div>
   </section>
   </body>
   <script>
     function navigate(target) {
       const targetURLs = {
-        "7-11 App": "seven-eleven://www.7eleven.mobi/navPage/SE119",
-        "Google Chrome" : "googlechrome://www.allonline.7eleven.co.th",
-        "Safari" : "safari-https://www.allonline.7eleven.co.th",
+        "seven-eleven": "seven-eleven://www.7eleven.mobi/navPage/SE119",
+        "googlechrome" : "googlechrome://www.allonline.7eleven.co.th",
+        "safari-https" : "safari-https://www.allonline.7eleven.co.th",
+        "safari" : "safari://www.allonline.7eleven.co.th",
       }
       if(targetURLs[target]) window.location.href = targetURLs[target];
       else alert(`Cannot find target for "${target}"`)
