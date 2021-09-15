@@ -24,6 +24,7 @@
         <li onclick="navigate('fullLink')"><a href="#">Full Link with Fallback</a></li>
         <li onclick="navigate('fullLink')"><a href="https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa&fallback=yes">Normal href</a></li>
         <li onclick="navigate('intent')"><a href="#">Use intent <code>intent://</code></a></li>
+        <li onclick="navigate('dynamicLink')"><a href="#">Use Dynamic Link <code>https://7eleventh.page.link/WfHN</code></a></li>
         
     </div>
   </section>
@@ -37,6 +38,7 @@
         "safari" : "safari://www.allonline.7eleven.co.th",
         "fullLink": "https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa&fallback=yes",
         "intent": "intent://www.7eleven.mobi/navPage/SE119?page=product_detail&product_id=453627&item_id=351908_0&utm_source=line_oa&fallback=yes#Intent;scheme=seven-eleven;end;",
+        "dynamicLink": "https://7eleventh.page.link/WfHN",
       }
       if(targetURLs[target]) window.location.href = targetURLs[target];
       else alert(`Cannot find target for "${target}"`)
