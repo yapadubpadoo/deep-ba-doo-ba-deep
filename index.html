@@ -21,7 +21,8 @@
         <li onclick="navigate('googlechrome')"><a href="#">Open with Google Chrome <code>googlechrome://</code></a></li>
         <li onclick="navigate('safari-https')"><a href="#">Try to open with Safari <code>safari-https://</code></a></li>
         <li onclick="navigate('safari')"><a href="#">Try to open with Safari <code>safari://</code></a></li>
-        <li onclick="navigate('fullLink')"><a href="#">Full Link</a></li>
+        <li onclick="navigate('fullLink')"><a href="#">Full Link with Fallback</a></li>
+        <li onclick="navigate('fullLink')"><a href="https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa&fallback=yes">https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa&fallback=yes</a></li>
     </div>
   </section>
   </body>
@@ -32,7 +33,7 @@
         "googlechrome" : "googlechrome://www.allonline.7eleven.co.th",
         "safari-https" : "safari-https://www.allonline.7eleven.co.th",
         "safari" : "safari://www.allonline.7eleven.co.th",
-        "fullLink": "https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa"
+        "fullLink": "https://www.7eleven.mobi/navPage/SE119?page=smart_category&category_id_th=-s-17253&utm_source=line_oa&fallback=yes"
       }
       if(targetURLs[target]) window.location.href = targetURLs[target];
       else alert(`Cannot find target for "${target}"`)
